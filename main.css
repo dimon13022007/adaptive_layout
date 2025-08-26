@@ -232,6 +232,11 @@ ul {
   justify-content: center;
 }
 
+.image-container img {
+  width: 20%;
+  height: auto;
+}
+
 .inst-shots {
   font-weight: 700;
   font-size: 15px;
@@ -250,7 +255,6 @@ ul {
   background-color: #000000;
   height: 300px;
   padding-top: 65px;
- 
 }
 
 .footer-title {
@@ -292,11 +296,27 @@ ul {
   display: none;
 }
 
-.menu-button{
+.menu-button {
   display: none;
 }
+
+@media (max-width: 600px){
+  .menu-button {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    background: black;
+    border: none;
+  }
+  ul {
+    display: none;
+  }
+
+}
+
 @media (max-width: 768px) {
-  ul{
+  ul {
     gap: 35px;
   }
   .main-image {
@@ -315,23 +335,12 @@ ul {
     margin-left: 80px;
   }
 
-  .img-car{
+  .img-car {
     display: none;
   }
-  
-  .img-bicycle {
-    width: 250px;
-    height: 250px;
-  }
 
-  .img-door {
-    width: 250px;
-    height: 250px;
-  }
-
-  .img-wires {
-    width: 250px;
-    height: 250px;
+  .image-container img {
+    width: 30%; 
   }
 
   .image-header {
@@ -347,20 +356,19 @@ ul {
     height: 150px;
   }
 
-  .img-door{
+  .img-door {
     display: none;
   }
 
-  .img-wires{
+  .img-wires {
     display: none;
   }
 
-  .card-description{
+  .card-description {
     display: none;
   }
   .cards-container {
     margin-left: 25px;
-    
   }
   .resent-post {
     margin-left: 25px;
@@ -370,28 +378,27 @@ ul {
     display: none;
   }
 
-  .card-image{
+  .card-image {
     float: none;
     margin: 10px auto;
-    
   }
 
-  :last-child.card{
+  :last-child.card {
     display: none;
   }
 
-  .inst-page{
+  .inst-page {
     display: none;
   }
 
-  .image-section{
+  .image-section {
     background-color: white;
   }
 
-  .inst-shots{
+  .inst-shots {
     display: none;
   }
-  
+
   .inst-shots-mobile {
     display: block;
     margin-left: 20px;
@@ -401,12 +408,11 @@ ul {
     text-transform: uppercase;
   }
 
-  .img-bicycle {
-    width: 300px;
-    height: 300px;
+  .image-container img {
+    width: 90%; 
   }
 
-  .discription-contacts{
+  .discription-contacts {
     display: none;
   }
 
@@ -421,13 +427,13 @@ ul {
     max-width: 300px;
   }
 
-  .contact-address{
+  .contact-address {
     max-width: 220px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .menu-button{
+  .menu-button {
     display: block;
     position: absolute;
     right: 30px;
@@ -436,13 +442,11 @@ ul {
     border: none;
   }
 
-  .main-card-text{
+  .main-card-text {
     font-size: 13px;
   }
 
-  .card-subtitle{
+  .card-subtitle {
     font-size: 10px;
   }
 }
-
-
