@@ -178,7 +178,7 @@ ul {
   margin: 25px auto 0;
   gap: 32px;
   max-width: 1200px;
-  width: 100%;
+  width: 80%;
 }
 
 .card-image {
@@ -309,6 +309,14 @@ ul {
     background: black;
     border: none;
   }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 1px;
+    margin: 20px 0 0 0;
+  }
+  
   ul {
     display: none;
   }
