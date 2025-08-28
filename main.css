@@ -168,7 +168,7 @@ ul {
   color: #4e4e4e;
   text-transform: uppercase;
   margin-top: 66px;
-  margin-left: 160px;
+  padding-left: 10%;
 }
 
 .cards-container {
@@ -205,7 +205,6 @@ ul {
   font-size: 14px;
   margin-top: 15px;
   max-width: 600px;
-  line-height: 25px;
 }
 
 .image-section {
@@ -221,7 +220,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 175px;
+  padding: 0 10%;
   margin-top: 45px;
   margin-bottom: 25px;
 }
@@ -300,7 +299,7 @@ ul {
   display: none;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .menu-button {
     display: block;
     position: absolute;
@@ -316,11 +315,28 @@ ul {
     padding: 0 1px;
     margin: 20px 0 0 0;
   }
-  
+
   ul {
     display: none;
   }
 
+  .card-description {
+    font-size: 10px;
+  }
+
+  .card-subtitle {
+    font-size: 10px;
+  }
+
+  .main-card-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-description {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -335,12 +351,9 @@ ul {
 
   .cards-container {
     grid-template-columns: 1fr;
-    margin-left: 80px;
-    margin-right: 20px;
-  }
-
-  .resent-post {
-    margin-left: 80px;
+    width: 80%;
+    padding: 0 12px;
+    margin: 20px auto 0;
   }
 
   .img-car {
@@ -348,7 +361,7 @@ ul {
   }
 
   .image-container img {
-    width: 30%; 
+    width: 30%;
   }
 
   .image-header {
@@ -376,9 +389,6 @@ ul {
     display: none;
   }
   .cards-container {
-    margin-left: 25px;
-  }
-  .resent-post {
     margin-left: 25px;
   }
 
@@ -417,7 +427,7 @@ ul {
   }
 
   .image-container img {
-    width: 90%; 
+    width: 90%;
   }
 
   .discription-contacts {
@@ -451,7 +461,7 @@ ul {
   }
 
   .main-card-text {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .card-subtitle {
